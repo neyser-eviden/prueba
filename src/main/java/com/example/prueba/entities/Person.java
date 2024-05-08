@@ -12,6 +12,9 @@ import lombok.NoArgsConstructor;
 @Table(name = "usuarios")
 public class Person {
 
+    private Animal animal;
+    private Asignatura asignatura;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
